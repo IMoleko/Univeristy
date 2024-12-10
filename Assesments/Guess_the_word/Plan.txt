@@ -1,0 +1,21 @@
+Variables - Score, Shuffled word, Player guesses, Actual word, Round, attempts, dict
+
+UI - VSC console
+
+Validation
+     Use all words else rego
+     Words under 6 letters
+     Error messages + what the error is
+
+Project style:
+    OOP + Procedural 
+    OOP: Common use pharases for the game- error messages.
+    Functions: Add an order to the program      
+
+Task 1: Validation 
+    I/O messages, error for trapping, 
+
+Task 2: Base game 
+    Counter for attempts
+
+
