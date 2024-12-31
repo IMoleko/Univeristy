@@ -41,7 +41,7 @@ class Shelf:
 
 
 class Book:
-    def __init__(self, title, author, width, height, volume, orientation, shelf_id=None, book_id=None):
+    def __init__(self, title, author, width, height, volume, pages, orientation, shelf_id=None, book_id=None):
         """
         Represents a book with dimensions, metadata, and optional database tracking IDs.
         """
@@ -51,6 +51,7 @@ class Book:
         self.width = width
         self.height = height
         self.volume = volume
+        self.pages = 
         self.orientation = orientation
         self.shelf_id = shelf_id
 
