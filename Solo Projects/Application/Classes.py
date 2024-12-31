@@ -51,7 +51,7 @@ class Book:
         self.width = width
         self.height = height
         self.volume = volume
-        self.pages = 
+        self.pages = pages
         self.orientation = orientation
         self.shelf_id = shelf_id
 
@@ -62,10 +62,10 @@ class Book:
         if self.id is None:
             db_manager.execute_query(
                 '''
-                INSERT INTO books (title, author, width, height, volume, orientation, shelf_id)
+                INSERT INTO books (title, author, width, height, volume, pages, orientation, shelf_id)
                 VALUES (?, ?, ?, ?, ?, ?, ?)
                 ''',
-                (self.title, self.author, self.width, self.height, self.volume, self.orientation, self.shelf_id)
+                (self.title, self.author, self.width, self.height, self.volume, self.pages, self.orientation, self.shelf_id)
             )
             self.id = db_manager.cursor.lastrowid
 
